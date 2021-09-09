@@ -15,15 +15,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - run: |
-         printenv|sort
-         
-         echo ${{ github.workspace }}
-          
-      - run: |
-         echo process.env['ACTIONS_ID_TOKEN_REQUEST_URL']
- 
-         node --print 'process.env'
+
          
       - run: |
          echo $(python ${{ github.workspace }}/test.py)
