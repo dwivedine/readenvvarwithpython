@@ -17,8 +17,8 @@ jobs:
          echo ${{ github.workspace }}
           
       - run: |
-         const val = process.env['ACTIONS_ID_TOKEN_REQUEST_URL']
-         echo $val
+         echo process.env['ACTIONS_ID_TOKEN_REQUEST_URL']
+ 
          node --print 'process.env'
          
       - run: |
