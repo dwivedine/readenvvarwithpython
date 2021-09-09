@@ -18,4 +18,4 @@ jobs:
           
         
       - run: |
-         python ../../test.py
+         python ${{ github.workspace }}/test.py
