@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  id-token: write
 jobs:
   envjob:
     # The type of runner that the job will run on
