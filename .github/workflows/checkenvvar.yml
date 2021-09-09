@@ -16,6 +16,8 @@ jobs:
       - run: |
          echo ${{ github.workspace }}
           
-        
+      - run: |
+         node --print 'process.env'
+         
       - run: |
          echo $(python ${{ github.workspace }}/test.py)
